@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
         GameObject[] both = (GameObject[])obstacles.Concat(background);
         foreach (GameObject obj in both)
         {
-            obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0, dirY) * movementSpeed;
+            obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -dirY) * movementSpeed;
         }
         */
     }
