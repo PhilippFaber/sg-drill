@@ -4,6 +4,7 @@
 - Unity eingerichtet 
 - Projekt erstellt und ein GitHub-Repository eingerichtet.
 - Bohrmechanik implementiert: Ein Dreieck bewegt sich vor einem einfarbigen Hintergrund stetig senkrecht nach unten.
+- Simples Menü erstellt - Play Button führt zum Spiel
 
 ## Aufgabe 2 - Grundmechanik
 
