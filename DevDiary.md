@@ -20,7 +20,6 @@ Jessica Spuling
 - Es gibt eine "Zielline" bestehend aus einem Objekt, welches der Drill berühren kann. Sollte man dieses Berühren wird das Spiel beendet.
 - Man kann durch drücken von ESC das Spiel pausieren (Drill bewegt sich nicht mehr). Außerdem erscheint ein Button zum vortsetzten des Spiels (oder wieder ESC drücken) und ein Button zum Verlassen des Spiels ins Hauptmenü.
 
-
 - Wenn das Spiel beendet wird, wird das Spiel angehalten (Drill bewegt sich nicht mehr) und ein Menü erscheint, in welchem man das Spiel neustarten, ins Hauptmenü zurück und in ein Textfeld den Highscore Namen eingeben kann.
 
 ## Aufgabe 3 - Erweiterte Spielinteraktion
@@ -32,3 +31,7 @@ Jessica Spuling
 ## Aufgabe 5 - Finish & Polish
 - Die Hindernisse Despawnen wenn in ihre y Position einen Schwellwert überschreitet.
 
+## Sonstiges
+- Der Bohrer hat eine Animation und einen ihm angehängten Körper, der sich mit ihm bewegt.
+- Der Körper besitzt sich ändernde Sprites, die den aktuellen Zustand anzeigen
+- Durch die Anzahl an Assets, die der Bohrkörper besitzt, hat der Spieler nun 4 Leben anstelle von 3.
