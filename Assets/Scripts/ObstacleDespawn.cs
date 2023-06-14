@@ -11,7 +11,6 @@ public class ObstacleDespawn : MonoBehaviour
     {
         if (transform.position.y > despawnLimit)
         {
-            print("hi");
             Destroy(gameObject);
             
         }
