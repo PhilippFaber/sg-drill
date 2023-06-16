@@ -22,6 +22,11 @@ public class CollisionManager : MonoBehaviour
     private int health;
     private SpriteRenderer renderer;
 
+    private int currentLayer = 0;
+
+    [Tooltip("The different rotation Speed for each Layer")]
+    [SerializeField] private float[] rotationSpeeds;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +53,28 @@ public class CollisionManager : MonoBehaviour
         }else if (collision.CompareTag("Finish"))
         {
             FinishedGame();
+        }else if (collision.CompareTag("Background"))
+        {
+            if (collision.name.Contains("1") && currentLayer == 0)
+            {
+                GetComponent<PlayerController>().rotationSpeed = rotationSpeeds[currentLayer];
+                currentLayer++;
+            }else if (collision.name.Contains("2") && currentLayer == 1)
+            {
+                GetComponent<PlayerController>().rotationSpeed = rotationSpeeds[currentLayer];
+                currentLayer++;
+            }
+            else if (collision.name.Contains("3") && currentLayer == 2)
+            {
+                GetComponent<PlayerController>().rotationSpeed = rotationSpeeds[currentLayer];
+                currentLayer++;
+            }
+            else if (collision.name.Contains("4") && currentLayer == 3)
+            {
+                GetComponent<PlayerController>().rotationSpeed = rotationSpeeds[currentLayer];
+                currentLayer++;
+            }
+            
         }
     }
 

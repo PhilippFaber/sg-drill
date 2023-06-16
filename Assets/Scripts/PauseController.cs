@@ -10,15 +10,19 @@ public class PauseController : MonoBehaviour
     public UnityEvent GameFinished;
 
     private bool isPaused;
+    private bool gameFinished;
     // Start is called before the first frame update
     void Start()
     {
         isPaused = false;
+        gameFinished = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (gameFinished)
+            return;
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (!isPaused)
@@ -30,6 +34,11 @@ public class PauseController : MonoBehaviour
                 Resume();
             }
         }
+    }
+
+    public void SetGameFinished()
+    {
+        gameFinished = true;
     }
 
     public void Pause()

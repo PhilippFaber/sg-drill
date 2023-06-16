@@ -18,12 +18,12 @@ public class ObstacleSpawner : MonoBehaviour
         if (timer > 0)
         {
             timer -= timerMax;
-            SpawnObstacle();
+            //SpawnObstacle();
         }
         timer += Time.deltaTime;
     }
 
-    void SpawnObstacle()
+    public void SpawnObstacle()
     {
         float left = transform.position.x - widthOffset;
         float right = transform.position.x + widthOffset;
