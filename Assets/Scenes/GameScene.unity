@@ -533,18 +533,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.11265135}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 10, y: 10}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10, y: 8.728782}
   m_EdgeRadius: 0
 --- !u!50 &415417706
 Rigidbody2D:
@@ -614,7 +614,7 @@ SpriteRenderer:
   m_SortingLayerID: -305184209
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b4d9d2f4377a4024b94d56d80b99f27c, type: 3}
   m_Color: {r: 1, g: 0, b: 0.07898474, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -633,8 +633,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415417704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -10.68, z: 0}
-  m_LocalScale: {x: 20.088762, y: 7.374069, z: 1}
+  m_LocalPosition: {x: 0, y: -13, z: 0}
+  m_LocalScale: {x: 2.5569491, y: 1.18408, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -811,7 +811,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.38679248, g: 0.23535958, b: 0.2779851, a: 0}
+  m_BackGroundColor: {r: 0.54509807, g: 0.42352942, b: 0.36078432, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1347,7 +1347,7 @@ GameObject:
   - component: {fileID: 742076364}
   - component: {fileID: 742076363}
   - component: {fileID: 742076362}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Border_Left
   m_TagString: Border
   m_Icon: {fileID: 0}
@@ -1464,8 +1464,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -409241239
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2645,7 +2645,7 @@ GameObject:
   - component: {fileID: 1310613462}
   - component: {fileID: 1310613461}
   - component: {fileID: 1310613460}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Border_Right
   m_TagString: Border
   m_Icon: {fileID: 0}
@@ -2762,8 +2762,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -409241239
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -15,7 +15,7 @@ TagManager:
   - Water
   - UI
   - Finiish
-  - 
+  - Sides
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Finish
     uniqueID: 3989783087
+    locked: 0
+  - name: Sides
+    uniqueID: 3885726057
     locked: 0
