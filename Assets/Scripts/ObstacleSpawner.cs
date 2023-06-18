@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
 {
-    public GameObject Obstacle1;
+    public GameObject[] obstacles;
+
     public float widthOffset;
     public float timerMax;
 
     private float timer = 0;
-    
 
     // Update is called once per frame
     void Update()
@@ -27,8 +27,9 @@ public class ObstacleSpawner : MonoBehaviour
     {
         float left = transform.position.x - widthOffset;
         float right = transform.position.x + widthOffset;
-        float rotation = Random.Range(0, 90);
-        Instantiate(Obstacle1, new Vector3(Random.Range(left, right), transform.position.y),
+        float rotation = Random.Range(0, 360);
+
+        Instantiate(obstacles[UnityEngine.Random.Range(0, 5)], new Vector3(Random.Range(left, right), transform.position.y),
             Quaternion.Euler(new Vector3(0, 0, rotation)));
     }
 }

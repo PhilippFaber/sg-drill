@@ -2294,9 +2294,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cb7c94e0519797408e8864d63c99bbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Obstacle1: {fileID: 5262062033547577499, guid: e1c2acbdd6d30614a962a719fd0292bb, type: 3}
+  obstacles:
+  - {fileID: 5262062033547577499, guid: 37d201176d869ea4e919e6afda06a022, type: 3}
+  - {fileID: 5262062033547577499, guid: ea146b4ef30d48847ab4f997f12b3c2e, type: 3}
+  - {fileID: 5262062033547577499, guid: 2404993d6d644cb4e9b1c49d642d7550, type: 3}
+  - {fileID: 5262062033547577499, guid: 7d62b170e9bbf964ebb364840f2013ff, type: 3}
+  - {fileID: 5262062033547577499, guid: 3553eb9ae2bd9134fbae6486447ff10e, type: 3}
+  Bone: {fileID: 5262062033547577499, guid: 37d201176d869ea4e919e6afda06a022, type: 3}
+  Lava: {fileID: 5262062033547577499, guid: ea146b4ef30d48847ab4f997f12b3c2e, type: 3}
+  Rock: {fileID: 5262062033547577499, guid: 2404993d6d644cb4e9b1c49d642d7550, type: 3}
+  Skull: {fileID: 5262062033547577499, guid: 7d62b170e9bbf964ebb364840f2013ff, type: 3}
+  Steel: {fileID: 5262062033547577499, guid: 3553eb9ae2bd9134fbae6486447ff10e, type: 3}
   widthOffset: 10
-  timerMax: 0.2
+  timerMax: 0.3
 --- !u!4 &1259086284
 Transform:
   m_ObjectHideFlags: 0
