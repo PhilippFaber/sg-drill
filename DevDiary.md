@@ -27,14 +27,20 @@ Jessica Spuling
 - Wenn das Spiel beendet wird, wird das Spiel angehalten (Drill bewegt sich nicht mehr) und ein Menü erscheint, in welchem man das Spiel neustarten, ins Hauptmenü zurück und in ein Textfeld den Highscore Namen eingeben kann. Zusätzlich kann man das Spiel beenden.
 
 ## Aufgabe 3 - Erweiterte Spielinteraktion
-- Die Hindernisse werden mit einem Timer auf einer zufälligen Position entlang der X Achse gespawnt.
+- Das spawnen der Hindernisse ist an den Highscore gekoppelt. Es werden Hindernisse alle x Score-Punkte an einer zufälligen Position entlang der X Achse gespawnt. Dadurch ist es egal ob man mit dem Bohrer schräg (und somit langsamer) oder gerade (und somit schneller) 'fährt'. 
 - Zusätzlich werden die Hindernisse mit einer zufallsbasierten Größe versehen.
+- Es gibt insgesamt 4 verschiedene Schichten. Die Schichten sind ähnlich wie die Hindernisse an den Highscore gekoppelt (1. Schicht 0%-25%, 2. Schicht 26%-50%, 3. Schicht 51%-75%, 4. Schicht 76%-100%). Beim Wechsel in die nächste Schicht verändert sich die Farbe/ das Bild des Hintergrundes und die Drehung des Bohrers wird langsamer. Der Hintergrund wird ähnlich wie die Hindernisse unterhalb des Bildschirmes gespawnt und bewegt sich dann nach oben. Hierbei werden mehrere Bilder für den Hintergrund genommen um somit den Übergang von den Schichten geschmeidiger zu machen.
+
+
 
 ## Aufgabe 4 - Meilensteine
 - Die UI-Elemente zum Hinzufügen des Highscores und anzeigen des Highscorescreens sind im Hauptmenü sowie im Game Over Screen bereits vorgemerkt.
-
+- Der Highscore wird oben rechts in der Ecke angezeigt.
+- Die aktuelle Schicht wird oben in der Mitte angezeigt (z.B. "Phase 1/4") um somit der spielenden Person zu zeigen wie weit es noch bis zum Ende ist.
+  
 ## Aufgabe 5 - Finish & Polish
-- Die Hindernisse Despawnen wenn in ihre y Position einen Schwellwert überschreitet.
+- Die Hindernisse despawnen wenn in ihre y Position einen Schwellwert überschreitet.
+- Ähnlich wie die Hindernisse despawnen die Hintergrundbilder für die Schichten, wenn diese oberhalb aus dem Bildschirm sind. 
 
 ## Sonstiges
 - Der Bohrer hat eine Animation und einen ihm angehängten Körper, der sich mit ihm bewegt.
