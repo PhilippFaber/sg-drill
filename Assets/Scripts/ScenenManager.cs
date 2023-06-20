@@ -26,11 +26,17 @@ public class ScenenManager : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+        Debug.Log("Quit");
     }
 
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void ShowHighscores()
+    {
+        Debug.Log("TODO Show local Highscores.");
     }
 
 }
