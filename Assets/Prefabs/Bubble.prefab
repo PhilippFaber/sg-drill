@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3315863063149990229}
   - component: {fileID: 2303723117138278431}
   - component: {fileID: 4137236627847037285}
-  - component: {fileID: 1855029437002238867}
+  - component: {fileID: 3489855949762903792}
   - component: {fileID: -4595424793629256838}
   m_Layer: 0
-  m_Name: Steel
+  m_Name: Bubble
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d88d433b531fbe9478d5f11f3afe93f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 592bea70e30a8f44fa3f66c3aaf75809, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -114,8 +114,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &1855029437002238867
-BoxCollider2D:
+--- !u!58 &3489855949762903792
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -146,19 +146,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.96, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.24, y: 5.12}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 7.39, y: 2.92}
-  m_EdgeRadius: 0
+  m_Radius: 2.29
 --- !u!114 &-4595424793629256838
 MonoBehaviour:
   m_ObjectHideFlags: 0

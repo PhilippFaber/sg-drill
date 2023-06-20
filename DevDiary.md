@@ -10,7 +10,7 @@ Jessica Spuling
 - Unity eingerichtet 
 - Projekt erstellt und ein GitHub-Repository eingerichtet.
 - Bohrmechanik implementiert: Ein Dreieck bewegt sich vor einem einfarbigen Hintergrund stetig senkrecht nach unten.
-- Simples Menü erstellt - Play Button führt zum Spiel
+- Simples Menü erstellt - Play Button führt zum Spiel während Quit das spiel beendet
 
 ## Aufgabe 2 - Grundmechanik
 - Es gibt jeweils eine Border links und rechts am Bildschirmrand, wenn man eine Border berührt "stirbt" man und das Spiel wird beendet.
@@ -22,15 +22,16 @@ Jessica Spuling
 - Die Bewegung des Bohrers wurde angepasst. Aus der momentanen Rotation des Bohrers wird die Richtung berechnet. Anstelle, dass der Bohrer entlang des Richtungsvektors bewegt wird, wird er stattdessen nur hinsichtlich der x-Komponente bewegt. Die y-Komponente wird benutzt um alle Hindernisse nach oben zu bewegen.(so sparen wir uns eine Bewegung der Kamera und das Spiel ist skalierbarer)
 
 - Es gibt eine "Zielline" bestehend aus einem Objekt, welches der Drill berühren kann. Sollte man dieses Berühren wird das Spiel beendet.
-- Man kann durch drücken von ESC das Spiel pausieren (Drill bewegt sich nicht mehr). Außerdem erscheint ein Button zum Fortsetzten des Spiels (oder wieder ESC drücken) und ein Button zum Verlassen des Spiels ins Hauptmenü.
 
-- Wenn das Spiel beendet wird, wird das Spiel angehalten (Drill bewegt sich nicht mehr) und ein Menü erscheint, in welchem man das Spiel neustarten, ins Hauptmenü zurück und in ein Textfeld den Highscore Namen eingeben kann.
+
+- Wenn das Spiel beendet wird, wird das Spiel angehalten (Drill bewegt sich nicht mehr) und ein Menü erscheint, in welchem man das Spiel neustarten, ins Hauptmenü zurück und in ein Textfeld den Highscore Namen eingeben kann. Zusätzlich kann man das Spiel beenden.
 
 ## Aufgabe 3 - Erweiterte Spielinteraktion
-- Die Hindernisse werden mit einem Timer auf einer zufälligen Position entlang der X Achse gespawnt
+- Die Hindernisse werden mit einem Timer auf einer zufälligen Position entlang der X Achse gespawnt.
+- Zusätzlich werden die Hindernisse mit einer zufallsbasierten Größe versehen.
 
 ## Aufgabe 4 - Meilensteine
-
+- Die UI-Elemente zum Hinzufügen des Highscores und anzeigen des Highscorescreens sind im Hauptmenü sowie im Game Over Screen bereits vorgemerkt.
 
 ## Aufgabe 5 - Finish & Polish
 - Die Hindernisse Despawnen wenn in ihre y Position einen Schwellwert überschreitet.
@@ -38,4 +39,5 @@ Jessica Spuling
 ## Sonstiges
 - Der Bohrer hat eine Animation und einen ihm angehängten Körper, der sich mit ihm bewegt.
 - Der Körper besitzt sich ändernde Sprites, die den aktuellen Zustand anzeigen
+- Man kann durch drücken von ESC das Spiel pausieren (Drill bewegt sich nicht mehr). Außerdem erscheint ein Button zum Fortsetzten des Spiels (oder wieder ESC drücken) und ein Button zum Verlassen des Spiels ins Hauptmenü.
 - Durch die Anzahl an Assets, die der Bohrkörper besitzt, hat der Spieler nun 4 Leben anstelle von 3.
