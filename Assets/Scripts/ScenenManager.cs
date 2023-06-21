@@ -36,7 +36,7 @@ public class ScenenManager : MonoBehaviour
 
     public void ShowHighscores()
     {
-        Debug.Log("TODO Show local Highscores.");
+        SceneManager.LoadScene("HighscoreTable");
     }
 
 }
