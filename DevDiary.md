@@ -35,8 +35,9 @@ Jessica Spuling
 
 ## Aufgabe 4 - Meilensteine
 - Die UI-Elemente zum Hinzufügen des Highscores und anzeigen des Highscorescreens sind im Hauptmenü sowie im Game Over Screen bereits vorgemerkt.
-- Der Highscore wird oben rechts in der Ecke angezeigt.
+- Der aktuelle Highscore wird oben rechts in der Ecke angezeigt.
 - Die aktuelle Schicht wird oben in der Mitte angezeigt (z.B. "Phase 1/4") um somit der spielenden Person zu zeigen wie weit es noch bis zum Ende ist.
+- beim Wechsel von einer Schicht in die nächste (siehe Aufgabe 3) wird das Spiel angehalten und Zark Muckerberg erscheint mit einem Text und der Text wird vorgelesen. Sobald der Text zuende gelesen wurde wird das Spiel fortgesetzt. Zark Muckerberg erscheint 3 mal (Schicht 1 abgeschlossen, Schicht 2 abgeschlossen, Schicht 3 abgeschlossen).
   
 ## Aufgabe 5 - Finish & Polish
 - Die Hindernisse despawnen wenn in ihre y Position einen Schwellwert überschreitet.
