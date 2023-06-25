@@ -11,6 +11,7 @@ public class HighscoreTable : MonoBehaviour {
     private List<Transform> highscoreEntryTransformList;
 
     private void Awake() {
+        //PlayerPrefs.SetString("highscoreTable", null);
         entryContainer = transform.Find("highscoreEntryContainer");
         entryTemplate = entryContainer.Find("highscoreEntryTemplate");
 
@@ -19,7 +20,7 @@ public class HighscoreTable : MonoBehaviour {
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
 
-        if (highscores == null) {
+        /*if (highscores == null) {
             // There's no stored table, initialize
             Debug.Log("Initializing table with default values...");
             AddHighscoreEntry(1000000, "CMK");
@@ -31,7 +32,7 @@ public class HighscoreTable : MonoBehaviour {
             // Reload
             jsonString = PlayerPrefs.GetString("highscoreTable");
             highscores = JsonUtility.FromJson<Highscores>(jsonString);
-        }
+        }*/
 
         // Sort entry list by Score
         for (int i = 0; i < highscores.highscoreEntryList.Count; i++) {
@@ -108,7 +109,7 @@ public class HighscoreTable : MonoBehaviour {
         transformList.Add(entryTransform);
     }
 
-    private void AddHighscoreEntry(int score, string name) {
+    public static void AddHighscoreEntry(int score, string name) {
         // Create HighscoreEntry
         HighscoreEntry highscoreEntry = new HighscoreEntry { score = score, name = name };
         

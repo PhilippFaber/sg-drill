@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public float depth = 0; // how far did the drill go
     [SerializeField] private float maxDepth;
     [SerializeField] private TMP_Text highscoreText;
+    [SerializeField] private HighScoreManager highscoreManager;
     private float dirY = 0;
     private int currentPhase = 1;
     private int depthCounterObstacle = 0;
@@ -84,6 +85,7 @@ public class PlayerController : MonoBehaviour
         depth += dirY * movementSpeed;
         int depthInt = (int) (depth * (-1));
         highscoreText.SetText(depthInt.ToString());
+        highscoreManager.currentHighscore = depthInt;
 
         if (depthInt >= maxDepth / 4 && currentPhase == 1)
         {
