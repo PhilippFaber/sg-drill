@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CollisionManager : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class CollisionManager : MonoBehaviour
     public Sprite demolishedSprite;
     [Tooltip("Sprite that is displayed when the Drill has hit 4 Obstacles")]
     public Sprite crackedSprite;
+
+    [SerializeField] private TMP_Text gameOverTitle;
+    [SerializeField] private TMP_Text currentPhaseText;
 
     private int health;
     private SpriteRenderer renderer;
@@ -107,12 +111,16 @@ public class CollisionManager : MonoBehaviour
     {
         Debug.Log("Game Over");
         renderer.sprite = crackedSprite;
+        gameOverTitle.text = "You made it to " + currentPhaseText.text;
+        gameOverTitle.color = Color.red;
         GetComponent<PauseController>().GameOver();
     }
 
     public void FinishedGame()
     {
         Debug.Log("You Win");
+        gameOverTitle.text = "You Win!";
+        gameOverTitle.color = Color.green;
         GetComponent<PauseController>().GameOver();
     }
 }
