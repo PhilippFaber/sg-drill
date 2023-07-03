@@ -3677,6 +3677,8 @@ MonoBehaviour:
   - {fileID: 5262062033547577499, guid: 2404993d6d644cb4e9b1c49d642d7550, type: 3}
   - {fileID: 5262062033547577499, guid: 7d62b170e9bbf964ebb364840f2013ff, type: 3}
   - {fileID: 5262062033547577499, guid: 3553eb9ae2bd9134fbae6486447ff10e, type: 3}
+  buffs:
+  - {fileID: 5262062033547577499, guid: 4e5d1e49be1ddcc4fa9bc4e049639e2c, type: 3}
   widthOffset: 10
   minScale: 0.1
   maxScale: 0.35

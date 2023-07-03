@@ -50,20 +50,29 @@ public class CollisionManager : MonoBehaviour
         {
             GameOver();
             health = 0;
-        }else if (collision.CompareTag("Obstacle"))
+        }
+        else if (collision.CompareTag("Obstacle"))
         {
             Destroy(collision.gameObject);
             DamagePlayer();
-        }else if (collision.CompareTag("Finish"))
+        }
+        else if (collision.CompareTag("Heal"))
+        {
+            Destroy(collision.gameObject);
+            HealPlayer();
+        }
+        else if (collision.CompareTag("Finish"))
         {
             FinishedGame();
-        }else if (collision.CompareTag("Background"))
+        }
+        else if (collision.CompareTag("Background"))
         {
             if (collision.name.Contains("1") && currentLayer == 0)
             {
                 GetComponent<PlayerController>().rotationSpeed = rotationSpeeds[currentLayer];
                 currentLayer++;
-            }else if (collision.name.Contains("2") && currentLayer == 1)
+            }
+            else if (collision.name.Contains("2") && currentLayer == 1)
             {
                 GetComponent<PlayerController>().rotationSpeed = rotationSpeeds[currentLayer];
                 currentLayer++;
@@ -78,7 +87,7 @@ public class CollisionManager : MonoBehaviour
                 GetComponent<PlayerController>().rotationSpeed = rotationSpeeds[currentLayer];
                 currentLayer++;
             }
-            
+
         }
     }
 
@@ -86,6 +95,20 @@ public class CollisionManager : MonoBehaviour
     {
         health--;
         Debug.Log("Obstacle was hit. Current health: " + health);
+        UpdatePlayerSprite();
+    }
+    public void HealPlayer()
+    {
+        health++;
+        if (health > maxHealth)
+        {
+            health = maxHealth;
+        }
+        Debug.Log("Heal was hit. Current health: " + health);
+        UpdatePlayerSprite();
+    }
+    public void UpdatePlayerSprite()
+    {
         if (health <= 0)
         {
             GameOver();

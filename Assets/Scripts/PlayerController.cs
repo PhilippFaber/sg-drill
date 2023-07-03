@@ -63,10 +63,15 @@ public class PlayerController : MonoBehaviour
         myRigidBody.velocity = new Vector2(dirX, 0) * movementSpeed;     //movement wird in physics loop gemacht... wir setzen nur speed
 
         GameObject[] obstacles = GameObject.FindGameObjectsWithTag("Obstacle");
+        GameObject[] heals = GameObject.FindGameObjectsWithTag("Heal");
         GameObject[] finish = GameObject.FindGameObjectsWithTag("Finish");
         GameObject[] background = GameObject.FindGameObjectsWithTag("Background");
         //GameObject[] both = (GameObject[])obstacles.Concat(finish);
         foreach (GameObject obj in obstacles)
+        {
+            obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -dirY) * movementSpeed;
+        }
+        foreach (GameObject obj in heals)
         {
             obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -dirY) * movementSpeed;
         }
