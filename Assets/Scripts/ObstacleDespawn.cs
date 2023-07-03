@@ -14,4 +14,15 @@ public class ObstacleDespawn : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Obstacle"))
+        {
+            if (collision.transform.localScale.x > transform.localScale.x)
+            {
+                Destroy(gameObject);
+            }
+            
+        }
+    }
 }
